@@ -25,7 +25,7 @@ placehold(customized)
 ```
 <a href="ad/address/page.html">CLICK</a>
 ```
-Two different Addresses: Absolute, Relative
+> Two different Addresses: Absolute, Relative
 ```
 > Server Based: Absolute Address
 "root"/under/file.html
