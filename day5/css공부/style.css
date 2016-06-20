@@ -1,0 +1,20 @@
+#main {
+  max-width: 500px;
+  margin: 0 auto; 
+}
+ #sub {
+    align-content: center
+    margin: 20px 300px 20px 300px;
+}
+
+#simple {
+  width: 500px;
+  margin: 50px auto;
+}
+
+#fancy {
+  width: 500px;
+  margin: 20px auto;
+  padding: 50px;
+  border-width: 10px;
+}
