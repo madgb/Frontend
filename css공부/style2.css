@@ -1,0 +1,4 @@
+.container{width: 600px; border:1px solid black;}
+.container:after {content:""; display:block; clear:both;}
+.box01{float: left; width: 100px; height: 100px; background: red}
+.box02{float: left; width: 100px; height: 100px; background: blue}

@@ -1,0 +1,17 @@
+@media screen and (min-width:500px) {
+  .nav {
+    float: left;
+    width: 20%;
+  }
+  .section {
+    margin-left: 25%;
+  }
+}
+@media screen and (max-width:499px) {
+  .nav li {
+    display: inline;
+  }
+}
+.sec {border:1px solid black;}
+.nav {border:1px solid black;}
+.container{overflow:auto;}
