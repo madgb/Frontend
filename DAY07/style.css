@@ -1,0 +1,113 @@
+[class~="container"] {
+    border: 1px dashed: #cacaca;
+    padding: 1em;
+}
+
+[lang|="en"] {
+    outline-color: red;
+    color: #7F80FF;
+}
+
+/*p {
+    color: #000000;
+}
+
+p:hover {
+    color: #FF7F00;
+}
+
+p:active {
+    background-color: #FF0000;
+}*/
+
+body{
+	margin-left: 6em;
+}
+
+/*a {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    text-decoration: none;
+    color: #996633;
+    background-color: #ebebeb;
+}
+
+a:visited {
+    color: #00FF00;
+    background-color: #000000;
+}
+
+a:hover {
+	display: inline-block;*/
+	/*margin-top: -5px;
+	height: 2em;*/
+	background-color: #FF7F00;
+	font-size: 150%;
+	padding-bottom: 3px;
+	border-bottom: 3px solid;
+}
+
+a:active{
+	outline: 4px solid #187CB1
+}
+
+a:focus{
+	outline: 4px solid #E700BC
+}
+
+/*.box{
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	outline: none;
+	background: #1C9F5E;
+}
+
+.box:hover{
+	outline: 10px solid #F2008E;
+}
+
+.round-box > *:first-child{}
+.round-box:last-child*2nd{}
+.wrapper:nth-child(2n){}
+
+:lang(en) {}
+:lang(es) {}*/
+
+.dropcap::first-line{
+	font-size: 150%;
+	color: #37FF37;
+	line-height: 2;
+	}
+
+.dropcap{
+	margin: 0;
+}
+
+.msg::before{
+	content: 'specialise in different areas of business so you can be sure that you won’t receive a generic service and although we can’t boast years and years of service we can ensure you that is a good thing in this industry. Our teams are up to date with the latest technologies, media trends and are keen to prove themselves in this industry and that’s what you want from an advertising agency, not someone who is relying on the same way of doing things that worked 10 years, 5 years or even a year ago.';
+	/*font-size: 300px;*/
+	color: #FF7F00;
+	display: inline-block;
+}
+
+.msg::after{
+	content: 'iPhone6';
+	/*font-size: 300px;*/
+	color: #FF7F00;
+}
+
+@media print {
+	a::after{
+		content: '(' attr(href) ')';
+		color: #FF7F00;
+	}	
+}
+.parent *:not(.out):not(a):not(p){
+	color:#FF0000;
+}
+
+
+

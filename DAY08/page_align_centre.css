@@ -1,0 +1,27 @@
+.page{
+	height: 500px;
+	width: 500px;
+	background: #8DFF4F;
+	padding-left: 1.25em;
+	padding-top: 1.25em;
+}
+
+.inner-page{
+	width: 250px;
+	height: 250px;
+	line-height: 250px;
+	background: #3474FF;
+	content:attr('class');
+	color: #F4FEFF;
+}
+
+.box{
+	height: 500px;
+	width: 500px;
+	background: #8DFF4F;
+	margin-top: 30px;
+	margin-left: 30px;
+	padding-left: 1.25em;
+	padding-top: 1.25em;
+	content: attr("name");
+}
