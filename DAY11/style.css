@@ -1,0 +1,37 @@
+body{
+	margin: 2rem 20%;
+}
+
+.image-container{
+	padding: 1rem;
+	border: 4px solid #34c0ff;
+	/*width: 550px;*/
+	overflow: auto;
+	margin-bottom: 2vmax;
+}
+
+img{
+	vertical-align: bottom;
+}
+
+.img-container p {
+	color: #13415b;
+	font-size: 0.875rem;
+	margin-bottom: 1.5em;
+	line-height: 1.45;
+}
+
+img {
+	float: left;
+	margin: 2em 2.2em 2.2em 2em;
+	height: 20vmax;
+	width: 20vmax;
+}
+
+.p {
+	/*overflow: hidden;*/
+}
+
+.image-containter img + *{
+	overflow: hidden;
+}

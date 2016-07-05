@@ -1,0 +1,31 @@
+body {
+    background-color: #c3b291;
+}
+
+
+}
+/*.center{
+	border: 1px solid;
+    margin: 50%;
+    width: 1px;
+    height: 1px;
+    position: relative;
+}*/
+
+.back{
+	position: absolute;
+	top: -5rem;
+}
+
+.front{
+	    position: absolute;
+    top: 1px;
+    left: 7px;
+}
+
+.glass{
+	    position: absolute;
+    top: -2px;
+    left: 10px;
+}
+

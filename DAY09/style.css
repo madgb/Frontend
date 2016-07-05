@@ -1,0 +1,44 @@
+
+
+		.text,.block
+		{
+			width: 14em;
+			height: 14em;
+			border: thick solid;
+			background: #fff;
+
+		}
+		
+		.text {
+			border-color: #DDA6FF;
+		}
+		
+		
+		.using-line-height .text{
+			line-height: 14em;
+			text-align: center;
+		}
+		
+		.table-cell .text{
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+			
+		}
+		.inline-block-work{ 
+			display:inline;
+			display:inline-table;
+			display:inline-block; 
+			vertical-align:middle;
+			text-align: center; 
+		}
+
+		.table-cell [type='long']{
+			color: red;
+			font-weight: 200%;
+		}
+
+		.using-line-height [type='long']{
+			color: red;
+			font-weight: 200%;
+		}

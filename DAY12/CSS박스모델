@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko_KR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS박스모델의 이헤</title>
+    <style>
+    	body {
+    		margin: 5% 15%;
+    		font: 1rem/1.5 Verdana;
+    		color: #494949;
+    	}
+    	[class$="box"]{
+    		margin-bottom: 1rem;
+    		width: 240px;
+    		padding-top: 0.45rem;
+    		padding-bottom: 0.45rem;
+    		outline: 1px solid #484848;
+    		text-align: center;
+    	}
+
+    	.content-box { box-sizing: content-box;background :#B3A533; }
+    	.border-box { box-sizing: border-box;background: #5C5519; }
+    </style>
+</head>
+
+<body>
+
+<div class="content-box">content-box</div>
+<div class="border-box">border-box</div>
+
+
+</body>
+</html>

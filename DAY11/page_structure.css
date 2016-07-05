@@ -1,0 +1,41 @@
+[class^="page"]{
+    height: 20vh;
+    display: block;
+    text-align: center;
+}
+    ::before{
+	content: attr(class);
+	font-size: 2em;
+/*	flex-direction: all;
+	vertical-align: middle;*/
+    color: white;
+/*    height: 100%*/
+
+}
+	
+
+.page_header{
+	background: #8CBCFF;
+}
+
+.page_navigation{
+	background: #996633;
+}
+
+.page_main{
+	background: #00FFFF;
+	width: 50%;
+	height: 30vmax;
+	float: left;
+}
+
+.page_sidebar{
+	background: #FF8BD0;
+	width: 50%;
+	float: right;
+}
+
+.page_footer{
+	background: #FF7F00;
+	clear: both;
+}

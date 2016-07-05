@@ -1,0 +1,60 @@
+.parent{
+	border: 6px solid #FF974E;
+	/*padding: 1rem;*/
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2rem;
+	background: #D6E4FF;
+	width: 720px;
+	/*float: left;*/
+}
+
+.child{
+	width: 140px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	color: #FFF;
+	float: left;
+	margin: 0 auto;
+}
+
+.child:first-child{
+	background: hsl(20, 20%, 40%);
+}
+
+.child:nth-child(2){
+	height:î40px;
+	background: #FF71D6;
+}
+
+.child:last-child{
+	background: #278F02;
+}
+
+.float_container{
+	overflow: hidden;
+}
+
+.clearfix::after {
+	content: 'pseudo element';
+	visibility: hidden;
+	display: block;
+	clear: both;
+	height: 0;
+}
+
+.micro_clearfix2::after {
+	content:'';
+	display: block;
+	clear: both;
+}
+
+.micro_clearfix3::before,
+.micro_clearfix3::after{
+	content: '';
+	display: table;
+}
+.micro_clearfix3::after{
+	clear: both;
+}

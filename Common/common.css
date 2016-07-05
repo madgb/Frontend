@@ -1,0 +1,34 @@
+/* 목록 초기화 재사용 가능한 스타일 모듈 */
+.reset-list ul,
+.reset-list ol,
+ul.reset-list,
+ol.reset-list {
+  margin-top:    0;
+  margin-bottom: 0;
+  padding-left:  0;
+  list-style:    none;
+}
+
+.micro_clearfix::before,
+.micro_clearfix::after{
+	content: '';
+	display: table;
+}
+.micro_clearfix::after{
+	clear: both;
+}
+
+.lt-ie8 .cf{
+	zoom: 1;
+}
+
+.blank_bottom_img img + *,
+img.blank_bottom + *{
+	overflow: hidden;
+}
+
+.clearfix::after {
+	content:'';
+	display: block;
+	clear: both;
+}

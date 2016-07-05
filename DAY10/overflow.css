@@ -1,0 +1,27 @@
+body [class*='parent']{
+	margin-left: 20%;
+	margin-right: 20%;
+	height: 100px;
+	border: 3px solid #6CEEE9;
+}
+
+.parent1{
+	overflow: visible;
+}
+
+.parent2{
+	overflow: hidden;
+}
+
+.parent3{
+	overflow: scroll;
+}
+
+.parent4{
+	overflow: auto;
+}
+
+.fl{
+	float: left;
+	margin-right: 1em;
+}

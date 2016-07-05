@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko_KR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS박스모델의 이헤</title>
+    <style>
+    body {
+        margin: 5% 15%;
+        font: 1rem/1.5 Verdana;
+        color: #494949;
+    }
+    
+    [class$="box"] {
+        margin-bottom: 1rem;
+        width: 240px;
+        padding-top: 0.45rem;
+        padding-bottom: 0.45rem;
+        outline: 1px solid #484848;
+        text-align: center;
+        border: 5px solid #C52823;
+    }
+    
+    .container {
+        background-color: #C5B8A5
+    }
+    
+    .row::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    
+    .col {
+        float: left;
+        width: 33.3333%;
+        text-align: center;
+        color: #49C5AF;
+        box-sizing: border-box;
+    }
+    
+    .content-box {
+        box-sizing: content-box;
+        background: #B3A533;
+    }
+    
+    .border-box {
+        box-sizing: border-box;
+        background: #5C5519;
+    }
+    .col:nth-child(1){background-color: #2EDC0F}
+    .col:nth-child(2){background-color: #D9DC36}
+    .col:nth-child(3){background-color: #DC521A;
+        border-right:16px solid black;}
+    </style>
+</head>
+
+<body>
+    <div class="content-box">content-box</div>
+    <div class="border-box">border-box</div>
+    <div class="container">
+        <div class="row">
+            <div class="col">column</div>
+            <div class="col">column</div>
+            <div class="col">column</div>
+        </div>
+    </div>
+</body>
+
+</html>
