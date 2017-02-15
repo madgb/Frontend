@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    ul, li{
+        list-style: none;
+        margin: 0;
+    }
+    .wrapper{
+        margin: 10%;
+    }
+    .gb-nav{
+        float: right;
+    }
+
+    .gb-nav li{
+        float: left;
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    #template{
+        float: left;
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        border: 1px solid currentcolor;
+    }
+    #template img{
+        width: 80px;
+    }
+
+    div:nth-child(3){
+        display: none;
+    }
+
+</style>
+
+<body>
+    
+    <div class="wrapper">
+            <hr>
+        <div class="gb-nav">
+            <ul>
+                <li>전체</li>
+                <li>임시저장</li>
+                <li>발매 진행중</li>
+                <li>발매완료</li>
+            </ul>
+        </div>
+        <div id="template">
+            <p class="title"></p>
+            <p class="song"></p>
+            <p class="date"></p>
+            <div class="imagebox">
+                <img id="coverImg">
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+    var req = new XMLHttpRequest();
+        req.onreadystatechange = function a (){
+            if(this.readyState === 4){
+                var data = JSON.parse(this.response);
+                for (i in data){
+                    var box = document.getElementById("template").cloneNode(true);
+                    box.children[0].innerText = data[i].title;
+                    box.children[1].innerText = data[i].song;
+                    box.children[2].innerText = data[i].date;
+                    document.getElementById('coverImg').src = data[i].cover;
+                    document.getElementsByTagName('div')[0].appendChild(box);
+                }
+            }
+        }
+    req.open("GET", "../data.json", true);
+    //req.setRequestHeader("x-api-key" : "")
+    req.send();
+    
+    </script>
+</body>
+</html>
