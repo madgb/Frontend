@@ -1,0 +1,168 @@
+body .font {
+	font-family:'BM JUA','Ã«Â°Â°Ã«â€¹Â¬Ã¬ÂËœÃ«Â¯Â¼Ã¬Â¡Â± Ã¬Â£Â¼Ã¬â€¢â€ž',sans-serif;
+	font-size: 17rem;
+	font-weight: bolder;
+	margin-top: 21%;
+}
+
+body {
+	background: linear-gradient(to bottom, #8e7fed 27%, #786ad7 49%, #786ad7 90%, #5a4fb8 100%) no-repeat;
+}
+
+.wrapper{
+	margin:0 auto;
+	width: 100vw;
+	height: 100vh;
+}
+
+#poster{
+	margin: 15% auto;
+	width: 28rem;
+	height: 37rem;
+	position: relative;
+	text-align: center;
+	box-shadow: 18px 10px 28px -6px rgba(0,0,0,0.45);
+	background: linear-gradient(to bottom, #FFFFFF 40%, #F0F0F0 60%, #F0F0F0 80%, #D4D4D4 100%);
+	animation: BB 3s ease-in-out;
+	transform-origin: left top;
+
+}
+
+@keyFrames BB{
+	0%{
+		transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(80deg);
+	}
+	100%{
+		transform: rotate(20deg);
+	}
+}
+
+#poster{
+	animation: CC 3s infinite 3s alternate ease-in-out;
+}
+
+@keyFrames CC{
+	0%{
+		transform: rotate(20deg);
+	}
+	50%{
+		transform: rotate(40deg);
+	}
+	100%{
+		transform: rotate(20deg);
+	}
+}
+#poster{
+	animation: DD 3s 15s ease-in-out;
+}
+
+@keyFrames DD{
+	0%{
+		transform: rotate(20deg) translateY(0);
+	}
+	50%{
+		transform: rotate(0deg) translateY(10rem);
+	}
+	100%{
+		transform: rotate(0deg) translateY(90rem);
+	}
+}
+
+.font::after{
+	content: '';
+	display:block;
+	position: absolute;
+	top: 4%;
+	left: 4%;
+	border-radius: 50%;
+	border: 10px solid;
+	width: 25rem;
+	height: 25rem;
+
+}
+
+#poster [class*="fa"]{
+	position: relative;
+	top: 3.3rem;
+	transform: scale(3);
+	margin-right: 11%;
+	left: 1.7rem;
+	animation: AA 2s ease-in-out;
+}
+
+
+
+/*@keyFrames AA{
+	0%{
+		transform: translateY(-113px) scale(3);
+	}
+	100%{
+		transform: translateY(0px) scale(3);
+	}
+}*/
+
+
+
+#poster > .star-l1{
+	top: 7.4rem;
+    left: 2.3rem;
+    transform: scale(3) rotate(-52deg);
+}
+
+#poster > .star-l5{
+    top: 7.4rem;
+    left: 1.4rem;
+    transform: scale(3) rotate(130deg);
+}
+
+#poster > .star-l2{
+	top: 4.4rem;
+	left: 1.5rem;
+	transform: scale(3) rotate(-29deg);
+}
+
+#poster > .star-l4{
+	top: 4.4rem;
+	left: 2.1rem;
+	transform: rotate(27deg) scale(3);
+}
+
+.after{
+	
+}
+.after::after{
+	content: '';
+	display: block;
+	border: 1px solid;
+	margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 81%;
+}
+
+.clip{
+	position: relative;
+}
+
+.clip-left, .clip-right{
+	position: absolute;
+	top: -2.3rem;
+}
+
+.clip-left{ left:10%; }
+.clip-right{ right:10%; }
+
+
+
+
+
+
+
+
+
+
+
+

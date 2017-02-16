@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="modal"></div>
+    <script>
+    // scrpt.parentNode.insertBefore(scrpt, scrpt.fistChild)
+    // 에서 insertBefore을 이용하여 임의로 prependChild라는 함수를 만들어보자
+    var prependChild = function(target, will_inserted_node) {
+    	if (target.firstChild) {
+    		return target.insertBefore(will_inserted_node, target.firstChild)
+    	} else {
+    		return target.appendChild(will_inserted_node);
+    	}
+        
+    }
+
+    //appendChild와 insertBefore을 사용하여
+    //에서 insertAfter라는 임의의 함수를 만들어보자
+    //nextSibling이 있으면 거기에 insertBefore을 하고
+    //없으면 맨 뒤에 넣으면 되니까 appendChild를 이용하는 조건문을 만든다
+
+    var insertAfter = function(thisNode, AfterHere) {
+        var brother = AfterHere.nextSibling;
+        var targetParent = AfterHere.parentNode;
+        if (brother === null) {
+            return targetParent.appendChild(thisNode);
+        } else {
+            return targetParent.insertBefore(thisNode, brother);
+        }
+    }
+
+    var queryAll = function(select, context) {
+        if (typeof select !== 'string') {
+            throw new Error('문자 유형을 적어주세요');
+        }
+        if (!context) {
+            context = document;
+        }
+        return context.querySelectorAll(select);
+    }
+
+    var query = function(selector, parent) {
+            return queryAll(selector, parent)[0];
+        }
+        //선택자 - 쿼리셀렉터 등을 이용해 클래스를 잡거나, 선언한다
+    var body = document.body;
+    // var footer = document.querySelector('footer');
+    var exist_modal = false;
+    var modal = query('.modal');
+    var scripts_in_body = queryAll('script');
+    var last_script = scripts_in_body[scripts_in_body.length - 1];
+    
+    //open 버튼 생성
+    var btn = document.createElement('button');
+    var btn_text = document.createTextNode('OPEN');
+    
+    btn.appendChild(btn_text);
+
+    btn.setAttribute('class', 'btn_open');
+
+    prependChild(body, btn);
+
+    var btn_open = query('.btn_open');
+    btn_open.onclick = makeModal
+
+    function makeModal() {
+        if (!exist_modal) {
+            //요소 생성기
+            var para = document.createElement('p');
+            var huge2 = document.createElement('h2');
+            var btn2 = document.createElement('button');
+            var wrapper = document.querySelector('.modal');
+            //~text: TextNode 생성기
+            var h2text = document.createTextNode('나는 h2이다');
+            var ptext = document.createTextNode('나는 p이다');
+            var bttext2 = document.createTextNode('CLOSE');
+
+            wrapper.appendChild(huge2).appendChild(h2text);
+            wrapper.appendChild(para).appendChild(ptext);
+            wrapper.appendChild(btn2).appendChild(bttext2);
+
+            wrapper.appendChild(huge2).setAttribute('class', 'modal-title')
+            wrapper.appendChild(para).setAttribute('class', 'modal-desc')
+            wrapper.appendChild(btn2).setAttribute('class', 'modal-close')
+            wrapper.appendChild(btn2).setAttribute('aria-label', 'close modal window')
+            var btn_close = query('.modal-close');
+            btn_close.onclick = removeModal
+            insertAfter(last_script, modal);
+            // 상태 변경
+            exist_modal = !exist_modal;
+            this.setAttribute('disabled', true);
+        }
+    }
+    function removeModal() {
+  	// Modal???
+  	// 방법 1. .modal 찾아와서 제거할 것
+  	var modal = query('.modal');
+  	modal.parentNode.removeChild(modal);
+  	// 방법 2. 함수 실행 전에 컨텍스트를 변경해서 제거하는 방법
+
+  	// 상태 변경
+  	exist_modal = !exist_modal;
+  	make_btn.removeAttribute('disabled');
+}
+
+	make_btn.onclick = makeModal;
+
+    </script>
+</body>
+#F9F9F9
+
+</html>

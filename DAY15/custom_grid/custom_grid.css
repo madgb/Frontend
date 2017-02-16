@@ -1,0 +1,67 @@
+html *{
+	box-sizing: border-box;
+}
+
+main{
+	position: relative;
+	font-size: 30px;
+}
+
+/*실패..*/
+.container.show_grid{
+	background: url(layer.png) repeat;
+	z-index: 10002
+
+}
+
+body:hover.show_grid{
+	background: none;
+	z-index: 10000;
+}
+
+.header > .nav{
+	float: right;
+    margin-right: 50px;
+    background-color: #480701;
+    position: relative;
+    top: -57px;
+    right: -31px;
+}
+
+footer > .footer{
+	float: left;
+	border: 3px solid black;
+	font-size: 50px;
+}
+
+footer > .add1{
+	margin-left: 20px;
+	background-color: #7B85FF;
+}
+
+.header > .logo{
+	background-color: #0B3035;
+	position: relative;
+	top: -10px;
+}
+
+main > .news{
+	background-color: #FFFE3E;
+	border: 3px solid;
+	color: black;
+}
+
+main > .sub{
+	margin-left: 910px;
+	position: absolute;
+}
+
+main >.sub1{
+	bottom: 504px;
+}
+main > .sub2{
+	bottom: 240px;
+}
+main > .sub3{
+	bottom: -24px;
+}

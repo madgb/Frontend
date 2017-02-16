@@ -1,0 +1,12 @@
+body{
+	font: 0.875rem/1.5rem sans-serif;
+	color: #D4632B;
+}
+
+.column {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  background-clip: content-box;
+  background-origin: content-box;
+}

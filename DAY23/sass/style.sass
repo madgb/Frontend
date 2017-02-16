@@ -1,0 +1,23 @@
+@import _var.sass
+@import mixins.scss
+
+$font: Railroad
+@import url(https://fonts.googleapis.com/css?family=#{"$font"})
+
+p
+	font-family: '#{$font}', sans-serif
+	font-size: 2em
+	font-weight: 400
+	width: 50%
+	margin: 50px auto
+	@include box-sizing
+	+size($height:100px)
+	border: 10px solid
+	overflow: hidden
+
+.triangle
+	+star
+		&::after
+			+after
+		&::before
+			+before

@@ -1,0 +1,32 @@
+class Codelab extends React.Component {
+  render() {
+    
+    
+    return (
+      <div>
+        <h1>Hello {this.props.ABC}</h1>
+        <h2>{this.props.number}</h2>
+        <div>{this.props.children}</div>
+      </div>
+    );
+  }
+}
+
+Codelab.propTypes = {
+  ABC: React.PropTypes.string,
+  number: React.PropTypes.number.isRequired
+};
+
+Codelab.defaultProps = {
+  ABC: 'Unknown'
+};
+
+class App extends React.Component {
+  render() {
+    return (
+      <Codelab ABC={this.props.ABC} number={this.props.number}>{this.props.children}</Codelab>
+    );
+  }
+}
+
+ReactDOM.render(<App number={5}>dngkgkgk</App>,document.getElementById('root'))

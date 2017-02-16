@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.column-container{
+			max-width: 56.25rem;
+			margin: 3rem auto;
+			font-family: helvetica;
+		}
+		.column-container::after{
+			content: '';
+			display: block;
+			clear: both;
+		}
+		.column{
+			box-sizing: border-box;
+			float: left;
+			width: 33.3333%;
+			padding-right: 1.5rem;
+		}
+		.column:last-child{
+			padding-right: 0;
+		}
+		.column p{
+			margin-bottom: 1.5rem;
+		}
+		.no-multi-column{
+			background: #7D7D7D;
+		}
+		.multi-column{
+			line-height: 1.5rem;
+			color: #12A523;
+			-webkit-column-count: 3;
+			-moz-column-count: 3;
+			column-count: 3;
+			-webkit-column-gap: 2rem;
+			-moz-column-gap: 2rem;
+			column-gap: 2rem;
+			-webkit-column-rule: 1px solid #A108A5;
+			-moz-column-rule: 1px solid #A108A5;
+			column-rule: 1px dotted #A108A5;
+		}
+		.multi-column p{
+			margin-bottom: 1.5rem;
+			text-align: justify;
+		}
+		.img{
+			width:100%;
+		}
+
+		h1{
+			-webkit-column-span: all;
+			-moz-column-span: all;
+			column-span: all;
+		}
+	</style>
+</head>
+<body>
+	<div class="column-container no-multi-column">
+		<div class="column">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis voluptatum maxime inventore corrupti, dicta numquam illo harum vero dolor nostrum iure ipsum in qui accusamus quam nam veniam aliquid similique exercitationem aut veritatis sit sapiente? Maxime in, deserunt nesciunt. Molestiae nesciunt officia impedit aut ullam quo voluptatem sapiente aliquam non numquam neque, aspernatur aliquid expedita, deleniti illo accusamus incidunt animi magni at? Suscipit quos sed, earum beatae. Amet a, voluptate.</p>
+			<p>Repudiandae eveniet recusandae, tempora eum asperiores possimus. Temporibus quidem, optio corporis totam natus dolores dolor hic, suscipit, maxime recusandae maiores quasi. Odio facere facilis unde, distinctio ducimus expedita vel, nihil. Dolorum ut porro, delectus quod aspernatur magnam rem excepturi sint eius voluptate, sed doloremque! Ipsam et, rerum consectetur excepturi tenetur quod laboriosam exercitationem vel in aspernatur, sequi corporis nihil minima consequuntur quis consequatur asperiores. Suscipit aspernatur maiores minus corporis amet.</p>
+			
+		</div>
+		<div class="column">
+			<p>Repellendus necessitatibus ipsam quia id, porro provident debitis quidem possimus similique in consequatur fuga eligendi fugit minus quaerat vitae, incidunt, nulla nam. Impedit quisquam delectus beatae molestias tempora maxime in quo a. Assumenda doloribus impedit dolore dignissimos rerum, a tempore ab temporibus ut at, eaque dicta error sapiente harum quos accusantium amet, nostrum eius dolorem! Exercitationem cum culpa et temporibus dolor error deserunt, adipisci, id maiores totam, minus ut mollitia!</p>
+			<p>Sit quis iusto, recusandae autem iure veniam quas eius dolor eligendi aperiam provident distinctio illum dignissimos cum nulla iste eaque officia natus. In, dolorem, inventore. Eius sunt deserunt autem, nisi, accusantium quas culpa voluptate rerum rem repudiandae consequatur ipsam natus distinctio inventore? Consequuntur veritatis praesentium obcaecati, rerum sed in iste provident tenetur dolores, totam, natus blanditiis! At nesciunt corporis error molestias, neque quam velit tenetur architecto itaque ut a facere.</p>
+		</div>
+		<div class="column">
+			<p>Reiciendis nostrum omnis tempora molestias officia natus commodi ducimus voluptatibus sed voluptatum ratione assumenda maxime rem ex rerum at nihil, labore, asperiores velit fuga cupiditate numquam ullam repellendus doloribus. Quos perferendis earum voluptas repellat aperiam nisi obcaecati amet nobis iusto architecto praesentium, officia labore hic omnis. Fugit deleniti officia, eaque sequi laudantium ipsum deserunt, illo rerum in aspernatur ipsam, hic debitis odit repellendus voluptas officiis. Doloribus enim eligendi voluptates ex.</p>
+			<p>Nisi expedita dignissimos amet praesentium recusandae quo dolor libero, veniam magni facilis quas fuga officia maxime architecto ad, enim quidem eaque cupiditate nobis sunt dolorum commodi neque alias. Ipsam nam eius iusto est pariatur dolorem magnam, natus placeat voluptate labore animi dolor ex, veritatis, necessitatibus dicta porro temporibus maxime veniam eligendi quos ipsum iste quidem iure. Repellendus enim atque velit veritatis, perferendis reprehenderit rem aperiam qui. Cumque, perferendis nobis repellat.</p>
+		</div>
+	</div>
+	<div class="column-container multi-column">
+	<h1>h2</h1>
+	    <img src="Clip.png" alt="">
+	    <img src="../../drip/1339395664234_51.jpg" alt="">
+	    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus iusto excepturi, consequuntur, sunt consequatur ipsam. Ipsa, iusto? Velit quod mollitia odio, corrupti odit doloribus placeat excepturi ipsa fuga natus, aspernatur quis facilis maiores accusantium iusto quasi illum sapiente beatae quas nesciunt similique modi veniam voluptates perspiciatis! Quam perspiciatis tempora est unde, natus consectetur ducimus suscipit? Officia ad, totam repellendus praesentium earum vero eum sequi deleniti. Accusantium porro repudiandae mollitia optio?</p>
+		<p>Accusamus maiores temporibus error quas officia unde repellat quos excepturi ipsa at odio sed tenetur, amet asperiores, sequi tempora expedita animi numquam dignissimos inventore aperiam delectus dicta, eaque deserunt. Necessitatibus molestiae assumenda accusantium. Eum ducimus nisi, incidunt, quis voluptatibus doloribus totam ab optio! Minima repudiandae iure mollitia et ad quidem dignissimos eveniet nulla sunt delectus molestiae, laborum aspernatur reiciendis rem quod cupiditate, asperiores consequuntur! Magnam iure ab aspernatur molestias quidem.</p>
+		<p>Quasi qui, reprehenderit necessitatibus totam eveniet nihil vero repellendus quia. Perferendis, quasi exercitationem officia non cupiditate distinctio velit deleniti accusamus sunt, atque consectetur nulla, blanditiis ea ratione! Distinctio, doloremque libero delectus temporibus, deserunt nulla fugit esse a dignissimos tenetur quidem odio, nobis cumque placeat repellendus! Ab, provident pariatur, quia aut dignissimos temporibus, quisquam minima, similique suscipit inventore at ullam consequatur. Ipsam sequi delectus dolores dolorum obcaecati aliquid rem harum, ab.</p>
+		<p>Placeat tempora sequi numquam eaque tempore tenetur ullam, distinctio amet, necessitatibus nihil aspernatur rerum repellat odio id similique nisi? Obcaecati, pariatur! Ab repudiandae esse quod voluptate natus est cupiditate ullam eum odit, sit corporis nobis odio incidunt dolorum illo quaerat soluta asperiores eveniet, veritatis facere facilis obcaecati. Ducimus inventore quis nisi, laboriosam fugiat eligendi aut repellendus, quo consectetur ipsum esse sunt repudiandae harum libero hic rerum, ex, perspiciatis ab minus!</p>
+		<p>Inventore maxime illum fuga impedit corporis vel et voluptas voluptatem. Mollitia placeat expedita dolore perspiciatis ipsum consequatur suscipit dignissimos. In quia veritatis, beatae vitae facere sed itaque expedita voluptas aut quibusdam iste consequuntur! Repudiandae architecto dolor ducimus veniam quas. Dicta, nemo voluptate perspiciatis nam laudantium necessitatibus quidem quae sunt, placeat molestiae molestias neque quasi! Commodi deleniti esse cupiditate perspiciatis temporibus. Aut veritatis mollitia eum possimus soluta fuga, natus minus ut.</p>
+		<p>Fugiat odio blanditiis necessitatibus, dolores incidunt eius, placeat obcaecati asperiores totam cupiditate eos voluptatum deleniti facere omnis et distinctio tempore est illum deserunt provident esse! Officiis sed fugiat distinctio, aspernatur minima in, qui quisquam inventore amet quos incidunt ducimus rem consectetur illum porro architecto molestias ipsum! Id ratione maxime, minus dolore repellendus voluptatem modi cum quas eos iste sunt dolor? Laborum quaerat commodi placeat, cumque et provident voluptas molestias dolorem.</p>
+	</div>
+	<div class="column-container multi-column">
+
+    <img src="http://lorempixel.com/1000/200" alt="">
+    <img src="http://lorempixel.com/1000/200" alt="">
+    <img src="http://lorempixel.com/1000/200" alt="">
+    <img src="http://lorempixel.com/1000/200" alt="">
+    <img src="http://lorempixel.com/1000/200" alt="">
+    <img src="http://lorempixel.com/1000/200" alt="">
+    <img src="http://lorempixel.com/1000/200" alt="">
+    <img src="http://lorempixel.com/1000/200" alt="">
+    <img src="http://lorempixel.com/1000/200" alt="">
+    <img src="http://lorempixel.com/1000/200" alt="">
+    <img src="http://lorempixel.com/1000/200" alt="">
+    <img src="http://lorempixel.com/1000/200" alt="">
+    <img src="http://lorempixel.com/1000/200" alt="">
+    <img src="http://lorempixel.com/1000/200" alt="">
+    <img src="http://lorempixel.com/1000/200" alt="">
+    <img src="http://lorempixel.com/1000/200" alt="">
+    <img src="http://lorempixel.com/1000/200" alt="">
+
+
+	</div>
+</body>
+</html>

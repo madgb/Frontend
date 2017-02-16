@@ -1,0 +1,24 @@
+@charset "UTF-8";
+btn_global {
+  color: #fcfcfc;
+  background-color: #ccffcc;
+  padding: 30px;
+  border: 2px solid currentcolor;
+  border-radius: 10px; }
+
+btn_small {
+  color: #fcfcfc;
+  background-color: #ccffcc;
+  padding: 20px;
+  border: 2px solid currentcolor;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: -10px; }
+
+btn_main {
+  color: 이;
+  background-color: 러;
+  padding: 면;
+  border: 안;
+  border-radius: 10px; }

@@ -1,0 +1,42 @@
+/*body.over-grid::after{
+	content: '';
+	position: absolute;
+	background: url(layer.png) repeat;
+	top: 0;
+	left: 50%;
+	z-index: 10000;
+	min-height: 100vh;
+	transform: translateX(-50%);
+}*/
+
+/*body.over-grid::after,
+.container{
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 100vh;
+}*/
+
+.row{
+	margin-bottom: 24px;
+}
+
+.col{
+	background-color: #ECFF34;
+}
+
+.container{
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 100vh;
+}
+
+.container.show_grid{
+	background: url(layer.png) repeat;
+}
+
+.container:hover.show_grid{
+	
+	background: none;
+}

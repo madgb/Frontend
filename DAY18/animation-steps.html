@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko_KR">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	body{background-color: black;}
+		.run{
+			margin: 10% auto;
+			height: 70px;
+			width: 64px;
+			background: url(animation-steps.png) no-repeat;
+			animation: AA steps(13) 2s infinite;
+		}
+		@keyframes AA{
+			0%{background-position-x: 0, scale(2);}
+			100%{background-position-x: -416px, scale(2);}
+		}
+
+	</style>
+</head>
+<body>
+
+<div class="run"></div>
+	
+</body>
+</html>

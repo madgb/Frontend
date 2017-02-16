@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko_KR">
+<head>
+	<meta charset="UTF-8">
+	<title>네모네모박스</title>
+	<style>
+	    body * { box-sizing: border-box; }
+		.wrapper{
+			width: 1440px;
+			margin: 0 auto;
+		}
+		.front_head{
+			height: 90px;
+			background-color: #202124;
+		}
+		.logo{
+			width: 105px;
+			height: 40px;
+			margin-left: 51px;
+			margin-top: 25px;
+		}
+		.box{
+			float: left;
+		}
+		.top{
+			width: 960px;
+			height: 662px;
+			background-color: #729ea8;
+		}
+		.right{
+			width: 480px;
+			height: 662px;
+			border: 10px solid #8C8F86;
+
+		}
+		.other{
+			width: 480px;
+			height: 480px;
+			border: 10px solid #8F3B56;
+		}
+		.main2{
+			width: 1260px;
+			height: 1100px;
+			border: 1px solid #6B8F1C;
+			float: left;
+			/*margin-left: 90px;*/
+			padding-top: 101px;
+		}
+		.main2 .box{
+			float: left;
+		}
+
+		.main2 .small{
+            height: 333px;
+            width: 315px;
+            border: 3px solid #28328F;
+            padding-right: 15px;
+		}
+		.main2 .top{
+			width: 470.5px;
+			height: 537px;
+			border: 3px solid #28328F;
+		}
+		.main2 .down{
+			width: 945px;
+			height: 462px;
+			border: 3px solid #28328F;
+		}
+		.position1{
+			position: relative;
+            top: -203px
+		}
+	</style>
+</head>
+<body>
+	
+
+<div class="wrapper">
+	<section class="header">
+		<div class="front_head">
+			<div class="front logo"></div>
+		</div>
+	</section>
+	<section class="main">
+		<div class="main box top"></div>
+		<div class="main box right"></div>
+		<div class="main box other"></div>
+		<div class="main box other"></div>
+		<div class="main box other"></div>
+	</section>
+	<section class="main2">
+		<div class="main2 box small"></div>
+		<div class="main2 box top"></div>
+		<div class="main2 box top"></div>
+		<div class="main2 box small position1"></div>
+		<div class="main2 box small position"></div>
+		<div class="main2 box down"></div>
+	</section>
+	<section class="footer"></section>
+</div>
+
+
+</body>
+</html>

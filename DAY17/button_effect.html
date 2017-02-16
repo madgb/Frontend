@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko_KR">
+<head>
+	<meta charset="UTF-8">
+	<title>버튼이펙트</title>
+	<link rel="stylesheet" href="button_effect.css">
+</head>
+<style>
+	.wrapper{margin:4rem;}
+
+	img {
+		position:relative;
+left: 30%;
+transform: scale(0.6) rotate(-45deg);
+transform-origin: 0px 0px;
+animation: AA 5s infinite alternate cubic-bezier(0.94, 0.04, 0.18, 0.99);
+
+}
+
+@keyFrames AA{
+	0%{
+		transform: translateY(-113px) scale(0.5)rotate(20deg);
+	}
+	50%{
+		transform: translateY(-113px) scale(0.5)rotate(80deg);
+	}
+	100%{
+		transform: translateY(-113px) scale(0.5)rotate(100deg);
+	}
+}
+
+</style>
+
+<body>
+
+<div class="wrapper">
+
+	<div class="type1">
+		<button type="button" class="button slide_from_left" >Slide From Left</button>
+		<button type="button" class="button slide_from_right" >Slide From right</button>
+		<button type="button" class="button slide_from_top" >Slide From top</button>
+		<button type="button" class="button slide_from_bottom" >Slide From bottom</button>
+	</div>
+    <div class="type2">
+    	<button type="button" class="button grow_from_inside" >Grow From Inside</button>
+    	<button type="button" class="button grow_from_inner" >Grow From Inner</button>
+    	<button type="button" class="button grow_from_circle" >___Sunrise___</button>
+    	<button type="button" class="button grow_from_skew" >___Skeeew___</button>
+    	<button type="button" class="button grow_from_rotate" >___rotate___</button>
+
+    </div>
+	<button type="button" class="button button3d slide_from_something" >Slide From What</button>
+</div>
+
+<img src="../../drip/Simple-Musical-Notes-Vector.jpg" alt="">
+	
+</body>
+</html>

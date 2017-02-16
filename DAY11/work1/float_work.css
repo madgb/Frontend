@@ -29,6 +29,7 @@ body{
 	height: 14.4375rem;
 	float: left;
 	background-color: #fff1e2;
+	position: relative;
 }
 
 .small .img_left {
@@ -140,4 +141,41 @@ body{
 	font-weight: 500%;
 }
 
+/*.triangle{
+	border-left: none;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	border-right: 22px solid #fff1e2;
+	display: block;
+	position: absolute;
+	left: -3%;
+	
+	top: 40%;
+	display: none;
+}
 
+.triangle1{
+	border-left: none;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	border-right: 22px solid #fff1e2;
+	display: block;
+	position: absolute;
+	left: -3%;
+	
+	top: 40%;
+	display: none;
+}*/
+
+/*.box1.box_right:hover .inbox::before{
+	border-left: none;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	border-right: 22px solid #fff1e2;
+	display: block;
+	position: absolute;
+	left: -3%;
+	/* z-index: 10000; */
+	top: 40%;
+	transition: all 0.5s ease;
+}*/

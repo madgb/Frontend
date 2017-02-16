@@ -1,0 +1,67 @@
+.fade_underline{
+	border-bottom: 2px solid transparent;
+	color: blue;
+	font-weight: 300;
+	transition: border-bottom-color 610.561ms cubic-bezier(0.82, -0.28, 0.58, 1) 126.386ms;
+}
+
+.content{ width: 700px; margin:0 auto;}
+
+span{color: blue;}
+
+.fade_underline:hover,
+.fade_underline:focus{
+	border-bottom-color: #FF344A;	
+}
+
+span[class*="underline-"]{
+	position: relative;
+	overflow: hidden;
+	border-bottom: 2px solid transparent;
+}
+span[class*="underline-"]::before{
+	content: '';
+	position: absolute;
+	top: 100%;
+	bottom: 100%;
+	border-bottom: 2px solid #ff344a;
+}
+span.underline-from-left::before{
+    left: 0%;
+    right: 100%;
+    border-bottom-color: #FF344A;
+    transition: all ease 0.5s;
+}
+
+span.underline-from-left:hover::before,
+span.underline-from-left:focus::before{
+    border-bottom-color: #FF344A;
+    right: 0%;
+}
+
+span.underline-from-right::before{
+    left: 100%;
+    right: 0%;
+    border-bottom-color: #FF344A;
+    transition: all ease 0.5s;
+}
+
+span.underline-from-right:hover::before,
+span.underline-from-right:focus::before{
+    border-bottom-color: #FF344A;
+    left:0%;
+}
+
+span.underline-from-center::before{
+    left: 49%;
+    right: 70%;
+    border-bottom-color: #FF344A;
+    transition: all ease 0.5s;
+}
+
+span.underline-from-center:hover::before,
+span.underline-from-center:focus::before{
+    border-bottom-color: #FF344A;
+    left:0%;
+    right: 0%;
+}

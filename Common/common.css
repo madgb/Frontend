@@ -6,7 +6,7 @@ ol.reset-list {
   margin-top:    0;
   margin-bottom: 0;
   padding-left:  0;
-  list-style:    none;
+  list-style: none;
 }
 
 .micro_clearfix::before,
@@ -31,4 +31,9 @@ img.blank_bottom + *{
 	content:'';
 	display: block;
 	clear: both;
+}
+
+img.flex-img {
+  width: 100%;
+  height: auto;
 }

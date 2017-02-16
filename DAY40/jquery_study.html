@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko-KR" class="no-js">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="UTF-8">
+  <title>jQuery Library</title>
+  <style>
+    body {
+      height: 100vh;
+    }
+    /* CSS 포지션 스티키를 지원하는 브라우저: FF, Safari */
+    .csspositionsticky body {
+      background: #25a04d;
+    }
+    /* CSS 포지션 스티키를 미지원하는 브라우저: IE, Edge, Chrome, Android */
+    .no-csspositionsticky {
+      background: #fc414b;
+    }
+
+    /* 우아한 기능 저하: 크로스 브라우징을 목적으로 사용자 환경을 감지한 후, 대체 방식을 제공 */
+    .no-cssborderradius {
+      background-image: url('rounded-corner.png');
+    }
+    .box{
+    	width: 100px;
+    	height: 100px;
+    	background: #000;
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	color: #FFF;
+    }
+    .box.primary{
+    	background-color: #963728;
+    }
+    .box.secondary{
+    	background-color: #249666;
+    }
+  </style>
+  <!-- <script src="modernizr.custom.min.js"></script>
+  <script src="../../Resources/library/detectizr.js"></script> -->
+  <script>
+    // Detectizr 사용법
+    // Detectizr.detect({
+    //   // 옵션
+    //   'addAllFeaturesAsClass': false,
+    //   'detectDevice':          true,
+    //   'detectDeviceModel':     true,
+    //   'detectScreen':          true,
+    //   'detectOS':              true,
+    //   'detectBrowser':         true,
+    //   'detectPlugins':         true,
+    //   'detectPlugins':         true
+    // });
+    // Detectizr.init();
+  </script>
+</head>
+<body>
+
+<script src="../Common/jquery-3.1.0.min.js"></script>
+<script src="jquery_study.js"></script>
+<div class="box">ok</div>
+<div class="demo">
+	<button type="button" class="color-pick">오리꽥꽥꽥ㄲ꽦</button>
+	<button type="button" class="change-txt-btn">아래 단락 내용 변경</button>
+	<p>문서객체모델은 아직 준비되지 않았습니다</p>
+</div>
+<script>
+	// (function(global, $) {
+	// 	'use strict';
+	// 	global.setTimeout(function() {
+	// 		$('.demo').find('p').text('im ready');}, 2000);
+	// })(this, this.jQuery)
+	
+(function(global, $) {
+	'use strict';
+
+
+	var $ctb = $('.change-txt-btn');
+	$ctb.on('click', function() {
+		$(this).next().text('changed');
+		$(this).attr('disabled', true);
+	});
+
+	var $colorPicker = $('.color-pick');
+	$colorPicker.on('click', function() {
+		$('body').css('background', '#6B9652');
+	});
+
+	
+
+})(this, this.jQuery);
+
+(function(global, $) {
+	'use strict';
+
+	var $boxColor = $('.box')
+		$boxColor.toggle(
+			function() {
+				$boxColor.addClass('primary');
+			}, function() {
+				$boxColor.addClass('secondary');
+			}
+		)
+
+
+
+})(this, this.jQuery);
+</script>
+
+</body>
+</html>

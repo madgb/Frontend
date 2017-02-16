@@ -1,0 +1,54 @@
+.col{ float: left; display: inline-block; border: 1px solid;}
+
+.col-1{ width: 60px }
+.col-2{ width: 120px }
+.col-3{ width: 180px }
+.col-4{width: 240px;}
+.col-5{ width: 300px }
+.col-6{ width: 360px }
+.col-7{ width: 420px }
+.col-8{ width: 480px }
+.col-9{ width: 540px }
+.col-10{ width: 600px }
+.col-11{ width: 660px }
+.col-12{ width: 720px }
+.col-13{ width: 780px }
+.col-14{ width: 840px }
+.col-15{ width: 900px }
+.col-16{ width: 960px }
+.col-17{ width: 1020px }
+
+.row::after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.row-1{ height: 60px }
+.row-2{ height: 120px }
+.row-3{ height: 180px }
+.row-4{ height: 240px }
+.row-5{ height: 300px }
+.row-6{ height: 360px }
+.row-7{ height: 420px }
+.row-8{ height: 480px }
+.row-9{ height: 540px }
+
+.push{ position: relative; }
+
+.push-1{ left: 60px }
+.push-2{ left: 120px }
+.push-3{ left: 180px }
+.push-4{ left: 240px }
+.push-5{ left: 300px }
+.push-6{ left: 360px }
+.push-7{ left: 420px }
+.push-8{ left: 480px }
+.push-9{ left: 540px }
+.push-10{ left: 600px }
+.push-11{ left: 660px }
+.push-12{ left: 720px }
+.push-13{ left: 780px }
+.push-14{ left: 840px }
+.push-15{ left: 900px }
+.push-16{ left: 960px }

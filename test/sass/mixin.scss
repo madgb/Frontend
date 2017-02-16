@@ -1,0 +1,13 @@
+@mixin btn_bass(	
+	$color: #fcfcfc,
+	$background-color: #ccffcc,
+	$padding: 20px,
+	$border: 2px solid currentcolor,
+	$border-radius: 10px)
+    {
+	color: $color;
+	background-color: $background-color;
+	padding: $padding;
+	border: $border;
+	border-radius: $border-radius;
+    }

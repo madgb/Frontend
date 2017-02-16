@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko_KR">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	    body{ margin-left: 10%; margin-right: 10% }
+        .container{position: relative; margin:0 auto;}
+		
+	    .box{ display: inline-block; box-sizing: border-box; border: 10px solid; margin-right: 20px; margin-bottom: 20px; }
+		
+
+		.left_top{ width:480px; height: 819px; position: absolute; left: 0 }
+
+		.left_bottom{ width: 480px; height: 138px; background-color: #FF9DC0; float: left;}
+		.right_top{ width: 480px; height: 659px; margin-left: 500px; background-color: #96FFC1; }
+		.right_bottom{ height: 294px; }
+		.one{ width: 300px; margin-left: 500px; position: relative;}
+		.two{ width: 160px; position: absolute; left: 312px; bottom: -29px;}
+
+	</style>
+</head>
+<body>
+	<!-- <img src="../grid_2.png" alt="grid"> -->
+    <div class="container">
+		<div class="box left_top"></div>
+		<div class="box right_top"></div>
+		<div class="box left_bottom"></div>
+		<div class="box right_bottom one">
+			<div class="box right_bottom two"></div>
+		</div>
+	</div>
+</body>
+</html>

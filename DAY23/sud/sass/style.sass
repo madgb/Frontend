@@ -1,0 +1,153 @@
+@import grid
+
+body
+	color: #000000
+	background: url(../../images/backbone.png)
+
+.header
+	width: 100%
+	height: 156px
+	display: flex
+	flex-flow: wrap column
+
+
+.title_logo
+	width: 100%
+	height: 73px
+	background: url(../../images/title_grid_mobile.png) no-repeat top
+	display: flex
+	flex-flow: wrap column
+	justify-content: center
+	align-items: center
+	order: 2
+	position: relative
+	top: -48px
+	&::after
+		content: ''
+		border-top: 48px solid #E71B23
+		position: absolute
+		top: 0
+		width: inherit
+		z-index: -1
+	&::before
+		content: ''
+		border-bottom: 48px solid #FFFFFF
+		position: absolute
+		top: 50px
+		width: inherit
+		z-index: -1
+		box-shadow: -1px 6px 23px -12px rgba(0,0,0,0.75)
+
+
+.pizza_logo
+	background: url(../../images/header_middle.png) no-repeat center
+		size: 241px 118px
+	width: 100%
+	height: 75px
+	margin: 0 auto
+	padding-top: 48px
+	width: 100%
+	height: 117px
+	position: absolute
+	top: 48px
+
+.nav_gb
+	width: 100%
+	height: 48px
+	display: flex
+	justify-content: flex-end
+	align-items: center
+	order: 1
+	padding: 6px
+	z-index: 1
+
+	& a
+		display: flex
+		margin: 0 8px
+		font-size: 10px
+
+.nav_main
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	width: 100%
+	position: relative 
+	top: -65px
+	order: 3
+
+	& a
+		display: table
+		border: 1px solid #e2e2e2
+		border-radius: 5px
+		width: 54px
+		height: 33px
+		background-color: #fcfcfc
+		text-align: center
+		line-height: 33px
+		color: #ed1c24
+		font-size: 10px
+		margin: 0 7px
+
+.main
+	position: relative
+	top: -23px
+
+.main_upper
+	background: url(../../images/main_back.png) no-repeat center
+		size: 400px 400px
+	width: 100%
+	height: 370px
+
+.main_logo
+	width: 100%
+	display: flex
+	justify-content: center
+
+.main_logo img
+	position: relative
+	top: 49px
+	transform: scale(0.6)
+%arrow
+	width: 46px
+	height: 64px
+	background-color: #e6131b
+	border: 1px solid #970509
+	position: relative
+	top: -123px
+
+%arrow_in
+	width: 29px
+	border-bottom: 5px solid #FFF
+	position: absolute
+
+.arrow_left
+	float: left
+	@extend %arrow
+	&::after
+		@extend %arrow_in
+		content: ''
+		transform: rotate(45deg)
+		top: 36px
+		left: 7px
+	&::before
+		@extend %arrow_in		
+		content: ''
+		transform: rotate(-45deg)
+		top: 18px
+		left: 7px
+
+.arrow_right
+	float: right
+	@extend %arrow
+	&::after
+		@extend %arrow_in
+		content: ''
+		transform: rotate(-45deg)
+		top: 36px
+		left: 7px
+	&::before
+		@extend %arrow_in
+		content: ''
+		transform: rotate(45deg)
+		top: 18px
+		left: 7px
